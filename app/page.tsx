@@ -106,40 +106,41 @@ export default function ProducerLanding() {
     {
       question: "How is Producer different from other website blockers?",
       answer:
-        "Most blockers are rigid: they block entire websites or nothing. Producer offers granular control—block YouTube's homepage but allow educational playlists, block Reddit except study subreddits, or allow specific URL parameters.",
+        "Most blockers are rigid: they block entire websites or nothing. Producer offers granular control—block YouTube's homepage but allow educational playlists, block Reddit except study subreddits, or allow specific URL parameters. It's intelligent control over your digital environment.",
     },
     {
       question:
         "Can I really access educational content while blocking entertainment on the same site?",
       answer:
-        "Yes! This is Producer's core innovation. Using our URL parameter filtering and allow-list system, you can block youtube.com/trending but allow your study playlists.",
+        "Yes! This is Producer's core innovation. Using our URL parameter filtering and allow-list system, you can block youtube.com/trending but allow your study playlists. #BeProducer and take control of your focus.",
     },
     {
       question: "Can I use Producer for free forever?",
       answer:
-        "Yes! The core features—focus timer, smart blocking, URL filtering, and basic stats—are completely free forever. Premium adds advanced analytics and insights.",
+        "Yes! The core features—focus timer, smart blocking, URL filtering, and basic stats—are completely free forever at beproducer.app. Premium adds advanced analytics and insights for power users.",
     },
     {
       question: "Is Producer good for students who need to do online research?",
       answer:
-        "Absolutely. You can access Google Scholar, Wikipedia, Khan Academy, and educational YouTube channels while blocking social media and entertainment feeds.",
+        "Absolutely. You can access Google Scholar, Wikipedia, Khan Academy, and educational YouTube channels while blocking social media and entertainment feeds. Producer understands you need the internet for learning.",
     },
     {
       question: "Can remote workers use Producer for time tracking?",
       answer:
-        "Yes! Producer's focus timer tracks your productive sessions, making it easy to log billable hours and create project-based modes for different clients.",
+        "Yes! Producer's focus timer tracks your productive sessions, making it easy to log billable hours and create project-based modes for different clients. Visit beproducer.app to get started.",
     },
     {
       question: "Will Producer help creative professionals?",
       answer:
-        "That's exactly what we built it for. Access design portfolios and tutorials while blocking infinite scroll feeds that destroy flow states.",
+        "That's exactly what we built it for. Access design portfolios and tutorials while blocking infinite scroll feeds that destroy flow states. Producer is your creative companion.",
     },
   ];
 
   return (
     <div
       style={{
-        background: "#0a0a0a",
+        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        minHeight: "100vh",
         color: "#fff",
         fontFamily:
           '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
@@ -152,13 +153,13 @@ export default function ProducerLanding() {
           top: 0,
           width: "100%",
           padding: "20px 5%",
-          background: "rgba(10, 10, 10, 0.8)",
+          background: "rgba(0, 0, 0, 0.8)",
           backdropFilter: "blur(10px)",
           zIndex: 1000,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+          borderBottom: "1px solid rgba(102, 126, 234, 0.3)",
         }}
       >
         <button
@@ -180,6 +181,8 @@ export default function ProducerLanding() {
               fontSize: "14px",
               background: "none",
               border: "none",
+              fontWeight: 500,
+              opacity: 0.9,
             }}
           >
             Features
@@ -192,12 +195,16 @@ export default function ProducerLanding() {
               fontSize: "14px",
               background: "none",
               border: "none",
+              fontWeight: 500,
+              opacity: 0.9,
             }}
           >
             Pricing
           </button>
           <a
-            href="#"
+            href="https://chrome.google.com/webstore"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
               color: "#fff",
@@ -205,9 +212,10 @@ export default function ProducerLanding() {
               borderRadius: "25px",
               textDecoration: "none",
               fontWeight: 600,
+              boxShadow: "0 2px 10px rgba(102, 126, 234, 0.5)",
             }}
           >
-            Get Started
+            Get Extension
           </a>
         </div>
       </nav>
@@ -227,17 +235,14 @@ export default function ProducerLanding() {
       >
         <div style={{ maxWidth: "800px", position: "relative", zIndex: 1 }}>
           <h1
-            style={
-              {
-                fontSize: "64px",
-                fontWeight: 800,
-                marginBottom: "20px",
-                lineHeight: 1.2,
-                background: "linear-gradient(135deg, #fff 0%, #a0a0a0 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              } as React.CSSProperties
-            }
+            style={{
+              fontSize: "64px",
+              fontWeight: 800,
+              marginBottom: "20px",
+              lineHeight: 1.2,
+              color: "#fff",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+            }}
           >
             Master Your Focus.
             <br />
@@ -246,14 +251,25 @@ export default function ProducerLanding() {
           <p
             style={{
               fontSize: "20px",
-              opacity: 0.8,
-              marginBottom: "40px",
+              opacity: 0.95,
+              marginBottom: "20px",
               lineHeight: 1.6,
             }}
           >
             The smart website blocker that understands nuance. Producer helps
             you block distractions, stay focused, and achieve deep work. Not
             just another blocker — it's your productivity companion.
+          </p>
+          <p
+            style={{
+              fontSize: "24px",
+              fontWeight: 600,
+              marginBottom: "40px",
+              color: "#fff",
+              textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+            }}
+          >
+            Join the movement. #BeProducer
           </p>
           <div
             style={{
@@ -264,15 +280,19 @@ export default function ProducerLanding() {
             }}
           >
             <a
-              href="#"
+              href="https://chrome.google.com/webstore"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
-                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                color: "#fff",
+                background: "rgba(255, 255, 255, 0.95)",
+                color: "#667eea",
                 padding: "16px 40px",
                 borderRadius: "30px",
                 textDecoration: "none",
                 fontWeight: 600,
                 fontSize: "18px",
+                boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                transition: "all 0.3s ease",
               }}
             >
               Add to Chrome - It's Free
@@ -280,14 +300,15 @@ export default function ProducerLanding() {
             <button
               onClick={() => scrollToSection("features")}
               style={{
-                background: "rgba(255, 255, 255, 0.1)",
+                background: "rgba(255, 255, 255, 0.2)",
                 color: "#fff",
                 padding: "16px 40px",
                 borderRadius: "30px",
                 fontWeight: 600,
                 fontSize: "18px",
-                border: "2px solid rgba(255, 255, 255, 0.2)",
+                border: "2px solid rgba(255, 255, 255, 0.3)",
                 cursor: "pointer",
+                backdropFilter: "blur(10px)",
               }}
             >
               See How It Works
@@ -300,11 +321,17 @@ export default function ProducerLanding() {
       <section id="features" style={{ padding: "100px 5%" }}>
         <div style={{ textAlign: "center", marginBottom: "80px" }}>
           <h2
-            style={{ fontSize: "48px", fontWeight: 700, marginBottom: "20px" }}
+            style={{
+              fontSize: "48px",
+              fontWeight: 700,
+              marginBottom: "20px",
+              color: "#fff",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+            }}
           >
             Not Just Another Blocker
           </h2>
-          <p style={{ fontSize: "18px", opacity: 0.7 }}>
+          <p style={{ fontSize: "18px", opacity: 0.95 }}>
             Producer understands that modern work requires internet access
           </p>
         </div>
@@ -331,31 +358,33 @@ export default function ProducerLanding() {
             {
               icon: "⏱️",
               title: "Focus Sessions",
-              desc: "Track productive time and build better work habits. Perfect for billing hours.",
+              desc: "Track productive time and build better work habits. Perfect for billing hours and productivity tracking.",
             },
             {
               icon: "📊",
               title: "Real-Time Analytics",
-              desc: "Monitor blocked attempts and understand your distraction patterns.",
+              desc: "Monitor blocked attempts and understand your distraction patterns with detailed insights.",
             },
             {
               icon: "🎨",
               title: "Project-Based Modes",
-              desc: "Create different blocking profiles for different work types.",
+              desc: "Create different blocking profiles for different work types. Switch between modes instantly.",
             },
             {
               icon: "⚡",
               title: "Instant Control",
-              desc: "One-click activation. Import/export rules. Motivational block pages.",
+              desc: "One-click activation. Import/export rules. Motivational block pages. Total control at your fingertips.",
             },
           ].map((feature, i) => (
             <div
               key={i}
               style={{
-                background: "rgba(255, 255, 255, 0.03)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
+                background: "rgba(255, 255, 255, 0.15)",
+                border: "2px solid rgba(255, 255, 255, 0.25)",
                 borderRadius: "20px",
                 padding: "40px",
+                transition: "all 0.3s ease",
+                backdropFilter: "blur(10px)",
               }}
             >
               <span
@@ -377,7 +406,14 @@ export default function ProducerLanding() {
       </section>
 
       {/* Stats */}
-      <section id="stats-section" style={{ padding: "80px 5%" }}>
+      <section
+        id="stats-section"
+        style={{
+          padding: "80px 5%",
+          background: "rgba(0, 0, 0, 0.2)",
+          backdropFilter: "blur(10px)",
+        }}
+      >
         <div
           style={{
             display: "grid",
@@ -403,17 +439,13 @@ export default function ProducerLanding() {
           ].map((stat, i) => (
             <div key={i} style={{ padding: "20px" }}>
               <div
-                style={
-                  {
-                    fontSize: "48px",
-                    fontWeight: 800,
-                    background:
-                      "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    marginBottom: "10px",
-                  } as React.CSSProperties
-                }
+                style={{
+                  fontSize: "48px",
+                  fontWeight: 800,
+                  color: "#fff",
+                  textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+                  marginBottom: "10px",
+                }}
               >
                 {stat.value}
               </div>
@@ -428,17 +460,21 @@ export default function ProducerLanding() {
         id="pricing"
         style={{
           padding: "100px 5%",
-          background:
-            "radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%)",
         }}
       >
         <div style={{ textAlign: "center", marginBottom: "80px" }}>
           <h2
-            style={{ fontSize: "48px", fontWeight: 700, marginBottom: "20px" }}
+            style={{
+              fontSize: "48px",
+              fontWeight: 700,
+              marginBottom: "20px",
+              color: "#fff",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+            }}
           >
             Simple Pricing
           </h2>
-          <p style={{ fontSize: "18px", opacity: 0.7 }}>
+          <p style={{ fontSize: "18px", opacity: 0.95 }}>
             Start free. Upgrade when ready.
           </p>
         </div>
@@ -453,11 +489,12 @@ export default function ProducerLanding() {
         >
           <div
             style={{
-              background: "rgba(255, 255, 255, 0.03)",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
+              background: "rgba(0, 0, 0, 0.4)",
+              border: "2px solid rgba(255, 255, 255, 0.15)",
               borderRadius: "20px",
               padding: "50px 40px",
               textAlign: "center",
+              backdropFilter: "blur(10px)",
             }}
           >
             <div
@@ -465,26 +502,25 @@ export default function ProducerLanding() {
                 fontSize: "24px",
                 fontWeight: 600,
                 marginBottom: "10px",
+                color: "#fff",
               }}
             >
               Free
             </div>
             <div
-              style={
-                {
-                  fontSize: "48px",
-                  fontWeight: 800,
-                  marginBottom: "10px",
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                } as React.CSSProperties
-              }
+              style={{
+                fontSize: "48px",
+                fontWeight: 800,
+                marginBottom: "10px",
+                color: "#fff",
+                textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+              }}
             >
               $0
             </div>
-            <div style={{ opacity: 0.6, marginBottom: "30px" }}>Forever</div>
+            <div style={{ opacity: 0.7, marginBottom: "30px", color: "#fff" }}>
+              Forever
+            </div>
             <ul
               style={{
                 listStyle: "none",
@@ -503,37 +539,46 @@ export default function ProducerLanding() {
                   key={i}
                   style={{
                     padding: "12px 0",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                    color: "#fff",
+                    opacity: 0.9,
                   }}
                 >
                   ✓ {f}
                 </li>
               ))}
             </ul>
-            <button
+            <a
+              href="https://chrome.google.com/webstore"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
+                display: "block",
                 width: "100%",
                 padding: "15px",
                 borderRadius: "25px",
-                border: "none",
+                border: "2px solid rgba(255, 255, 255, 0.2)",
                 fontWeight: 600,
                 background: "rgba(255, 255, 255, 0.1)",
                 color: "#fff",
                 cursor: "pointer",
+                textDecoration: "none",
               }}
             >
-              Get Started
-            </button>
+              Get Extension
+            </a>
           </div>
 
           <div
             style={{
-              background: "rgba(102, 126, 234, 0.1)",
-              border: "1px solid rgba(102, 126, 234, 0.5)",
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              border: "none",
               borderRadius: "20px",
               padding: "50px 40px",
               textAlign: "center",
               transform: "scale(1.05)",
+              boxShadow: "0 8px 30px rgba(102, 126, 234, 0.4)",
+              color: "#fff",
             }}
           >
             <div
@@ -546,21 +591,17 @@ export default function ProducerLanding() {
               Premium
             </div>
             <div
-              style={
-                {
-                  fontSize: "48px",
-                  fontWeight: 800,
-                  marginBottom: "10px",
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                } as React.CSSProperties
-              }
+              style={{
+                fontSize: "48px",
+                fontWeight: 800,
+                marginBottom: "10px",
+                color: "#fff",
+                textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+              }}
             >
               $4.99
             </div>
-            <div style={{ opacity: 0.6, marginBottom: "30px" }}>per month</div>
+            <div style={{ opacity: 0.9, marginBottom: "30px" }}>per month</div>
             <ul
               style={{
                 listStyle: "none",
@@ -581,41 +622,60 @@ export default function ProducerLanding() {
                   key={i}
                   style={{
                     padding: "12px 0",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
+                    color: "#fff",
                   }}
                 >
                   ✓ {f}
                 </li>
               ))}
             </ul>
-            <button
+            <a
+              href="https://chrome.google.com/webstore"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
+                display: "block",
                 width: "100%",
                 padding: "15px",
                 borderRadius: "25px",
                 border: "none",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                color: "#fff",
+                background: "rgba(255, 255, 255, 0.95)",
+                color: "#667eea",
                 cursor: "pointer",
+                textDecoration: "none",
+                boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)",
               }}
             >
-              Upgrade
-            </button>
+              Get Premium
+            </a>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section style={{ padding: "100px 5%" }}>
+      <section
+        style={{
+          padding: "100px 5%",
+          background: "rgba(0, 0, 0, 0.15)",
+          backdropFilter: "blur(10px)",
+        }}
+      >
         <div style={{ textAlign: "center", marginBottom: "80px" }}>
           <h2
-            style={{ fontSize: "48px", fontWeight: 700, marginBottom: "20px" }}
+            style={{
+              fontSize: "48px",
+              fontWeight: 700,
+              marginBottom: "20px",
+              color: "#fff",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+            }}
           >
             FAQ
           </h2>
-          <p style={{ fontSize: "18px", opacity: 0.7 }}>
-            Everything you need to know
+          <p style={{ fontSize: "18px", opacity: 0.95 }}>
+            Everything you need to know about Producer
           </p>
         </div>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
@@ -624,12 +684,14 @@ export default function ProducerLanding() {
               key={i}
               onClick={() => toggleFAQ(i)}
               style={{
-                background: "rgba(255, 255, 255, 0.03)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
+                background: "rgba(255, 255, 255, 0.15)",
+                border: "2px solid rgba(255, 255, 255, 0.25)",
                 borderRadius: "15px",
                 padding: "30px",
                 marginBottom: "20px",
                 cursor: "pointer",
+                transition: "all 0.3s ease",
+                backdropFilter: "blur(10px)",
               }}
             >
               <div
@@ -653,26 +715,48 @@ export default function ProducerLanding() {
 
       {/* CTA */}
       <section style={{ padding: "100px 5%", textAlign: "center" }}>
-        <h2 style={{ fontSize: "48px", fontWeight: 700, marginBottom: "20px" }}>
+        <h2
+          style={{
+            fontSize: "48px",
+            fontWeight: 700,
+            marginBottom: "20px",
+            color: "#fff",
+            textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+          }}
+        >
           Ready to Take Control?
         </h2>
-        <p style={{ fontSize: "20px", opacity: 0.7, marginBottom: "40px" }}>
-          Join thousands transforming their productivity.
+        <p style={{ fontSize: "20px", opacity: 0.95, marginBottom: "15px" }}>
+          Join thousands transforming their productivity with Producer
+        </p>
+        <p
+          style={{
+            fontSize: "26px",
+            fontWeight: 600,
+            marginBottom: "40px",
+            color: "#fff",
+            textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+          }}
+        >
+          #BeProducer
         </p>
         <a
-          href="#"
+          href="https://chrome.google.com/webstore"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            color: "#fff",
-            padding: "16px 40px",
+            background: "rgba(255, 255, 255, 0.95)",
+            color: "#667eea",
+            padding: "18px 48px",
             borderRadius: "30px",
             textDecoration: "none",
             fontWeight: 600,
             fontSize: "18px",
             display: "inline-block",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
           }}
         >
-          Start Focusing Today
+          Add to Chrome - It's Free
         </a>
       </section>
 
@@ -680,9 +764,10 @@ export default function ProducerLanding() {
       <footer
         style={{
           padding: "60px 5%",
-          background: "rgba(255, 255, 255, 0.02)",
-          borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+          background: "rgba(255, 255, 255, 0.1)",
+          borderTop: "2px solid rgba(255, 255, 255, 0.3)",
           textAlign: "center",
+          backdropFilter: "blur(10px)",
         }}
       >
         <div
@@ -704,8 +789,8 @@ export default function ProducerLanding() {
             </a>
           ))}
         </div>
-        <p style={{ opacity: 0.5, fontSize: "14px" }}>
-          © 2025 Producer. Built with focus.
+        <p style={{ opacity: 0.8, fontSize: "14px" }}>
+          © 2025 Producer | beproducer.app | Built with focus. #BeProducer
         </p>
       </footer>
     </div>
