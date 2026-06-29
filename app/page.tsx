@@ -347,33 +347,33 @@ export default function ProducerLanding() {
           {[
             {
               icon: "🎯",
-              title: "Selective Blocking",
-              desc: "Block YouTube's homepage but allow educational playlists. This is what makes Producer different.",
+              title: "Smart Custom Rules",
+              desc: "Create multiple blocking profiles with custom names. Switch between modes like Study, Work, or Deep Focus with just one click. Each rule set is completely independent.",
             },
             {
               icon: "🔗",
-              title: "URL Parameter Control",
-              desc: "Allow only videos in your 'Watch Later' playlist. Fine-tune access for ultimate precision.",
+              title: "Surgical URL Control",
+              desc: "Block YouTube's homepage but allow educational playlists. Block Instagram but keep business DMs. Fine-tune access with domain, URL, whitelist, and parameter-based filtering.",
             },
             {
               icon: "⏱️",
-              title: "Focus Sessions",
-              desc: "Track productive time and build better work habits. Perfect for billing hours and productivity tracking.",
+              title: "Session Management",
+              desc: "Create named focus sessions that track everything separately. See exactly how productive each work session was. Perfect for billing hours or tracking study time.",
             },
             {
               icon: "📊",
-              title: "Real-Time Analytics",
-              desc: "Monitor blocked attempts and understand your distraction patterns with detailed insights.",
+              title: "Advanced Analytics",
+              desc: "Track focus time, break time, and total session time for every session. View overall statistics including average focus time, total sessions, and blocks across all your work.",
             },
             {
               icon: "🎨",
-              title: "Project-Based Modes",
-              desc: "Create different blocking profiles for different work types. Switch between modes instantly.",
+              title: "Theme Personalization",
+              desc: "Choose from 6 beautiful color themes. Customize your block page title and message. Make Producer feel like yours.",
             },
             {
               icon: "⚡",
-              title: "Instant Control",
-              desc: "One-click activation. Import/export rules. Motivational block pages. Total control at your fingertips.",
+              title: "Complete Control",
+              desc: "One-click session activation. Import/export rule sets. Session history with full management. Edit session names. Clear individual stats. Total flexibility.",
             },
           ].map((feature, i) => (
             <div
